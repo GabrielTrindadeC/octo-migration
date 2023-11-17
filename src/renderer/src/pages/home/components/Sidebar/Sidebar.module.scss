@@ -1,0 +1,75 @@
+@use '../../../../styles/global';
+
+.sidebar {
+  width: 100%;
+
+  font-family: global.$mainFont;
+
+  font-size: 1.6rem;
+
+  border: 1px solid #cbc4cf;
+
+  background-color: #f5eff4;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.1);
+  border-radius: 1.2rem 1.2rem 0 0;
+
+  .titleContainer {
+    display: flex;
+    gap: 2.1rem;
+
+    align-items: center;
+
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1;
+
+    padding: 2.1rem;
+
+    position: relative;
+
+    background-color: global.$secondaryPurple;
+    border-radius: 1.2rem 1.2rem 0 0;
+
+    &::before {
+      width: 8px;
+      height: 8px;
+
+      display: block;
+
+      margin-bottom: 2px;
+
+      background-color: global.$primaryWhite;
+      border-radius: 50%;
+
+      content: '';
+    }
+
+    .dotSvg {
+      width: 3.4rem;
+    }
+  }
+
+  .itemsContainer {
+    max-height: 50rem;
+    overflow-y: auto;
+
+    margin-right: 0.1rem;
+
+    &::-webkit-scrollbar {
+      width: 0.4rem;
+
+      border: 0;
+
+      background: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: global.$secondaryGray;
+      border-radius: 8px;
+    }
+
+    .sidebarMain {
+      padding: 0 1.2rem;
+    }
+  }
+}

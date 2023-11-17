@@ -1,0 +1,64 @@
+.home {
+  display: grid;
+
+  color: #f2f2f2;
+}
+
+.navBar {
+  width: 100vw;
+  height: 5rem;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(117, 31, 245);
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+
+  margin-left: 10rem;
+
+  border-radius: 50%;
+}
+
+.mainContainer {
+  width: 90%;
+
+  max-width: 120rem;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+}
+
+.gridContainer {
+  width: 100%;
+
+  display: grid;
+  grid-template-areas:
+    'switches input'
+    'switches tabs';
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 28.4rem 1fr;
+  gap: 10px;
+}
+
+.gridSwitches {
+  grid-area: switches;
+}
+
+.gridInput {
+  display: flex;
+  flex-direction: column;
+  grid-area: input;
+}
+
+.gridTabs {
+  grid-area: tabs;
+}
