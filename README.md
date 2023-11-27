@@ -14,7 +14,7 @@ An Electron application with React and TypeScript
 $ yarn
 ```
 
-### Development
+### Developmen
 
 ```bash
 $ yarn dev
